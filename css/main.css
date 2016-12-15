@@ -963,7 +963,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc14d;
+  background: #ffffe8;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -1966,6 +1966,7 @@ ul li {
 .site-meta .site-title {
   font-size: 22px;
   font-weight: bolder;
+  color: #0092d8;
 }
 @media (max-width: 767px) {
   .site-meta .site-title {
@@ -1990,7 +1991,7 @@ ul li {
   position: relative;
   display: block;
   height: 2px;
-  background: #222;
+  background: #0092d8;
 }
 @media (max-width: 767px) {
   .logo-line-before i,
@@ -2003,6 +2004,9 @@ ul li {
 }
 .use-motion .logo-line-after i {
   right: -100%;
+}
+.menu .menu-item a {
+  color: #0092d8;
 }
 .site-subtitle {
   display: none;

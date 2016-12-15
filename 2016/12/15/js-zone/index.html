@@ -46,16 +46,48 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
+var a =1;
+function test(){
+    console.log(a);
+    a=4        
+    console.log(a);
+    var a;
+    console.log(a);
+}
+test();
+console.log(a);">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/11/28/hello-world/index.html">
+<meta property="og:title" content="js作用域问题">
+<meta property="og:url" content="http://yoursite.com/2016/12/15/js-zone/index.html">
 <meta property="og:site_name" content="美の前端">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="og:updated_time" content="2016-12-15T07:51:11.387Z">
+<meta property="og:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
+var a =1;
+function test(){
+    console.log(a);
+    a=4        
+    console.log(a);
+    var a;
+    console.log(a);
+}
+test();
+console.log(a);">
+<meta property="og:image" content="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png">
+<meta property="og:updated_time" content="2016-12-15T09:23:14.391Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="js作用域问题">
+<meta name="twitter:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
+var a =1;
+function test(){
+    console.log(a);
+    a=4        
+    console.log(a);
+    var a;
+    console.log(a);
+}
+test();
+console.log(a);">
+<meta name="twitter:image" content="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png">
 
 
 
@@ -67,7 +99,7 @@
   };
 </script>
 
-  <title> Hello World | 美の前端 - we made it</title>
+  <title> js作用域问题 | 美の前端 - we made it</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -196,7 +228,7 @@
             
             
               
-                Hello World
+                js作用域问题
               
             
           </h1>
@@ -205,13 +237,13 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-11-28T10:37:00+08:00" content="2016-11-28">
-              2016-11-28
+            <time itemprop="dateCreated" datetime="2016-12-15T17:18:39+08:00" content="2016-12-15">
+              2016-12-15
             </time>
           </span>
           <span class="post-time">
             | 修改于
-            <time itemprop="dateCreated" datetime="2016-12-15T15:51:11+08:00" content="2016-12-15">
+            <time itemprop="dateCreated" datetime="2016-12-15T17:23:14+08:00" content="2016-12-15">
               2016-12-15
             </time>
           </span>
@@ -237,8 +269,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/11/28/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/28/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/12/15/js-zone/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/15/js-zone/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -257,15 +289,41 @@
       
 
       
-        <span itemprop="articleBody"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <span itemprop="articleBody"><p>下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！</p>
+<pre><code class="javascript"><span class="keyword">var</span> a =<span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(a);
+    a=<span class="number">4</span>        
+    <span class="built_in">console</span>.log(a);
+    <span class="keyword">var</span> a;
+    <span class="built_in">console</span>.log(a);
+}
+test();
+<span class="built_in">console</span>.log(a);
+</code></pre>
+<a id="more"></a>
+<p>运行结果：</p>
+<p><img src="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png" alt="alt"></p>
+<p>为什么第3行的a会是undefined呢，因为这个a并不是全局变量。在function test里已经声明了（函数体倒数第2行）一个重名的局部变量，所以全局变量a被覆盖了，这说明了Javascript在执行前会对整个脚本文件的定义部分做完整分析,所以在函数test()执行前,函数体中的变量a就被指向内部的局部变量.而不是指向外部的全局变量。但这时a只有声明，还没赋值，所以输出undefined。</p>
+<p>用另一种简单的方式来理解就是</p>
+<pre><code class="javascript"><span class="comment">//var a = xxx; 可以理解为两个操作</span>
+<span class="comment">//var a;</span>
+<span class="comment">//a = xxx;</span>
+<span class="comment">//凡是var xx的语句，都会提高到函数作用域的最顶端</span>
+<span class="comment">//所以，那段代码翻译一下，执行的顺序是：</span>
+<span class="keyword">var</span> a;
+a = <span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
+  <span class="keyword">var</span> a
+  <span class="built_in">console</span>.log(a);
+  a=<span class="number">4</span>
+  <span class="built_in">console</span>.log(a);
+  <span class="built_in">console</span>.log(a);
+}
+test();
+<span class="built_in">console</span>.log(a);
+</code></pre>
+<p>现在是不是很清晰了呢？</p>
 </span>
       
     </div>
@@ -283,13 +341,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/15/Untitled/" rel="next" title="解析地区文本の方法">
+                <i class="fa fa-chevron-left"></i> 解析地区文本の方法
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/01/6-blog/" rel="prev" title="浮点数丢失精度">
-                浮点数丢失精度 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -316,8 +374,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/28/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/11/28/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/12/15/js-zone/"
+           data-title="js作用域问题" data-url="http://yoursite.com/2016/12/15/js-zone/">
       </div>
     
   </div>

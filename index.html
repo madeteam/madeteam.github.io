@@ -66,7 +66,7 @@
   };
 </script>
 
-  <title> 美の前端 </title>
+  <title> 美の前端 - we made it</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -181,15 +181,128 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/15/js-zone/" itemprop="url">
+                  js作用域问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-12-15T17:18:39+08:00" content="2016-12-15">
+              2016-12-15
+            </time>
+          </span>
+          <span class="post-time">
+            | 修改于
+            <time itemprop="dateCreated" datetime="2016-12-15T17:23:14+08:00" content="2016-12-15">
+              2016-12-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/15/js-zone/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/15/js-zone/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
       
-        
-        
-        
       
 
       
-    
+        
+          <p>下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！</p>
+<pre><code class="javascript"><span class="keyword">var</span> a =<span class="number">1</span>;
+<span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
+    <span class="built_in">console</span>.log(a);
+    a=<span class="number">4</span>        
+    <span class="built_in">console</span>.log(a);
+    <span class="keyword">var</span> a;
+    <span class="built_in">console</span>.log(a);
+}
+test();
+<span class="built_in">console</span>.log(a);
+</code></pre>
+          <!--
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/15/js-zone/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          -->
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -230,7 +343,7 @@
           </span>
           <span class="post-time">
             | 修改于
-            <time itemprop="dateCreated" datetime="2016-12-15T16:16:56+08:00" content="2016-12-15">
+            <time itemprop="dateCreated" datetime="2016-12-15T17:17:19+08:00" content="2016-12-15">
               2016-12-15
             </time>
           </span>
@@ -254,6 +367,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/15/Untitled/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/15/Untitled/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -271,7 +391,6 @@
       
         
           <h1 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h1><p>最近需求有涉及到将地区解析成编码的功能，例如将“北京市北京市辖县密云县”，解析出地址编码。没找到既有组件，于是自己写了一个。</p>
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><p>将地区文本解析为地区编码或省市区，地区文本格式</p>
           <!--
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/12/15/Untitled/#more" rel="contents">
@@ -358,6 +477,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/01/6-blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/01/6-blog/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -463,6 +589,13 @@
 
           
             
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/28/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/28/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -561,11 +694,28 @@
 
   
     
-    
 
   
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"madeteam"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
 
 
+    
   
 
   
