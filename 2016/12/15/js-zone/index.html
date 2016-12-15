@@ -46,47 +46,17 @@
 
 
 
-<meta name="description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
-var a =1;
-function test(){
-    console.log(a);
-    a=4        
-    console.log(a);
-    var a;
-    console.log(a);
-}
-test();
-console.log(a);">
+<meta name="description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js作用域问题">
 <meta property="og:url" content="http://yoursite.com/2016/12/15/js-zone/index.html">
 <meta property="og:site_name" content="美の前端">
-<meta property="og:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
-var a =1;
-function test(){
-    console.log(a);
-    a=4        
-    console.log(a);
-    var a;
-    console.log(a);
-}
-test();
-console.log(a);">
+<meta property="og:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！">
 <meta property="og:image" content="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png">
-<meta property="og:updated_time" content="2016-12-15T09:23:14.391Z">
+<meta property="og:updated_time" content="2016-12-15T09:29:52.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js作用域问题">
-<meta name="twitter:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！
-var a =1;
-function test(){
-    console.log(a);
-    a=4        
-    console.log(a);
-    var a;
-    console.log(a);
-}
-test();
-console.log(a);">
+<meta name="twitter:description" content="下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！">
 <meta name="twitter:image" content="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png">
 
 
@@ -243,7 +213,7 @@ console.log(a);">
           </span>
           <span class="post-time">
             | 修改于
-            <time itemprop="dateCreated" datetime="2016-12-15T17:23:14+08:00" content="2016-12-15">
+            <time itemprop="dateCreated" datetime="2016-12-15T17:29:52+08:00" content="2016-12-15">
               2016-12-15
             </time>
           </span>
@@ -289,7 +259,7 @@ console.log(a);">
       
 
       
-        <span itemprop="articleBody"><p>下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！</p>
+        <span itemprop="articleBody"><p>下面这段代码，结果是不是你预想的样子呢？试着运行一下吧！<br><a id="more"></a></p>
 <pre><code class="javascript"><span class="keyword">var</span> a =<span class="number">1</span>;
 <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>{
     <span class="built_in">console</span>.log(a);
@@ -301,7 +271,6 @@ console.log(a);">
 test();
 <span class="built_in">console</span>.log(a);
 </code></pre>
-<a id="more"></a>
 <p>运行结果：</p>
 <p><img src="http://ohhuzce89.bkt.clouddn.com/763164eb737b.png" alt="alt"></p>
 <p>为什么第3行的a会是undefined呢，因为这个a并不是全局变量。在function test里已经声明了（函数体倒数第2行）一个重名的局部变量，所以全局变量a被覆盖了，这说明了Javascript在执行前会对整个脚本文件的定义部分做完整分析,所以在函数test()执行前,函数体中的变量a就被指向内部的局部变量.而不是指向外部的全局变量。但这时a只有声明，还没赋值，所以输出undefined。</p>
